@@ -6,7 +6,8 @@ class MainPage(Page):
 
     OFFPLAN_PAGE = (By.CSS_SELECTOR, ".menu-text-link-leaderboard.w--current")
     SALE_STATUS_BTN = (By.CSS_SELECTOR,".select-field-3.w-select[wized='saleStatusFilter']")
-    SIDE_OFFPLAN_BTN = (By.XPATH, "//a[@class='_1-link-menu w-inline-block w--current']//div[@class='menu-button-text'] [text()='Off-plan']")
+    SIDE_OFFPLAN_BTN = (By.CSS_SELECTOR, '[wized="mobileTabProperties"]')
+    #(By.XPATH, "//a[@class='_1-link-menu w-inline-block w--current']//div[@class='menu-button-text'] [text()='Off-plan']")
     ANNOUNCED_BTN = (By.CSS_SELECTOR,"option[value='Announced']")
     PRODUCTS =(By.CSS_SELECTOR,".project-image")
     STATUS_ANNOUNCED =(By.XPATH,"//div[text()='Announced']")
